@@ -2,7 +2,7 @@
 
 This is an essential and not particularly technical guide on how to create a harness for doing mathematical research.
 
-Now that AI models can be used through their respective desktop apps, using a desktop app is the first step. This way, you can "connect" the models to a folder where you develop your project, giving them permission to modify the files and use your terminal for coding. In the GPT app, choose "Work" or use "Codex" (the first is better, since Codex is more oriented toward writing code).
+Now that AI models can be used through their respective desktop apps, downloading a desktop app is the first step. This way, you can "connect" the models to a folder where you develop your project, giving them permission to modify the files and use your terminal for coding. In the GPT app, choose "Work" or use "Codex" (the first is better, since Codex is more oriented toward writing code).
 
 One important advantage is that you can create the necessary coding environment for that project, which would not be available to the AI model online.
 
