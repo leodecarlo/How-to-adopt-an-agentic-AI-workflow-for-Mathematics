@@ -29,3 +29,7 @@ project/
 ```
 
 The agent reads `AGENTS.md` and `GOAL_PROMPT.md` to understand its instructions and goal, then checks `PROGRESS.md` before continuing work. It records new findings in `RESEARCH_TRACKER.md`, unsuccessful approaches in `FAILURES.md`, and the final synthesis in `FINAL_REPORT.md`.
+
+The GOAL_PROMPT.md is the file containing the problem you want to solve, simulations you want to do, etc.., it is important to set a "goal condition", that is a condition that your AI model will have to meet before to stop working. (Do not worry if you interrupt its work, these set of files let you do interrupt the model and going back to it). Agents.md define the behavior of the agents, for example it is important to asking adversial agents to check the computations. These files has to be well written and detailed, adapted to the models you want to use(for example Astra or Sol), so they would ask a lot of work that you will retreat to the usual Chat. But it is not that drammatic as it could seem. The point is letting AI to prepare these files for you !
+
+### How to prepare the AI
