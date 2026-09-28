@@ -39,7 +39,7 @@ Start a chat in Work mode (or the equivalent that lets your model write to your 
 
 Now that everything is settled, the real work begins.
 
-### How to Get a First Draft, Develop It, and Review It
+## How to Get a First Draft, Develop It, and Review It
 
 Once the harness is ready, all you have to do is ask the AI to pursue the goal. In GPT, activate "Goal" mode inside Work. But once the harness files are in the project folder, you can also give Work a normal instruction such as: "Read AGENTS.md, GOAL_PROMPT.md, and PROGRESS.md. Carry out the next step toward the goal, check the result, and update the progress files." Goal mode adds a persistent objective and a progress control so the desktop app can continue working across turns until it reaches a completion condition or needs input. A normal Work prompt guides the task you give it, and you can continue steering it in the same chat.
 
