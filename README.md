@@ -7,7 +7,7 @@ Now that AI models can be used through their respective desktop apps, downloadin
 One important advantage is that you can create the necessary coding environment for that project, which would not be available to the AI model online.
 
 But first, let's understand what a "harness" is, as AI engineers use the term. Even though it takes a little time to read, I suggest reading [this article](https://www.anthropic.com/research/vibe-physics) (by a QFT scientist who supervised an AI in early 2025 as it pursued a PhD in theoretical physics) for a good narrative of the experience of writing the `.md` file to build the AI's harness.
-The basic idea is that in a long chat LLMs get lost (loose information), making this harness is the way to maintain them focused on the task.
+The basic idea is that, in a long chat, LLMs get lost and lose track of information. Creating this harness helps keep them focused on the task.
 
 ## The "Harness": A Typical Structure for an Agentic Research Workflow
 
@@ -31,7 +31,7 @@ project/
 
 The agent reads `AGENTS.md` and `GOAL_PROMPT.md` to understand its instructions and goal, then checks `PROGRESS.md` before continuing work. It records new findings in `RESEARCH_TRACKER.md`, unsuccessful approaches in `FAILURES.md`, and the final synthesis in `FINAL_REPORT.md`. Other files may be suitable for a particular task. For example, if you are doing a review, `REVIEW_BY_SECTION.md` may be more appropriate than `RESEARCH_TRACKER.md`.
 
-`GOAL_PROMPT.md` is the file containing the problem you want to solve, the simulations you want to run, etc. It is important to set a "goal condition": a condition that your AI model must meet before it stops working. (Do not worry if you interrupt its work; this set of files lets you interrupt the model and return to it later.) `AGENTS.md` defines the behavior of the agents. For example, it is important to ask adversarial agents to check the computations. These files must be well written, detailed, and adapted to the models you want to use (for example, Astra or Sol), so preparing would  require a lot of work. But do not worry, AI is here to help you, it is not as daunting as it might seem. The point is to let AI prepare these files for you!
+`GOAL_PROMPT.md` is the file containing the problem you want to solve, the simulations you want to run, etc. It is important to set a "goal condition": a condition that your AI model must meet before it stops working. (Do not worry if you interrupt its work; this set of files lets you interrupt the model and return to it later.) `AGENTS.md` defines the behavior of the agents. For example, it is important to ask adversarial agents to check the computations. These files must be well written, detailed, and adapted to the models you want to use (for example, Astra or Sol), so preparing them would require a lot of work. But do not worry: AI is here to help you, so preparing them is not as daunting as it might seem. The point is to let AI prepare these files for you!
 
 ### How to Let AI Prepare the Harness
 
@@ -41,7 +41,7 @@ Now that everything is settled, the real work begins.
 
 ## How to Get a First Draft, Develop It, and Review It
 
-Once the harness is ready, all you have to do is ask the AI to pursue the goal. In GPT, activate "Goal" mode inside Work. But once the harness files are in the project folder, you can also give Work a normal instruction such as: "Read AGENTS.md, GOAL_PROMPT.md, and PROGRESS.md. Carry out the next step toward the goal, check the result, and update the progress files." Goal mode adds a persistent objective and a progress control so the desktop app can continue working across turns until it reaches a completion condition or needs input. A normal Work prompt guides the task you give it, and you can continue steering it in the same chat.
+Once the harness is ready, all you have to do is ask the AI to pursue the goal. In GPT, activate "Goal" mode inside Work. But once the harness files are in the project folder, you can also give Work a normal instruction such as "Read AGENTS.md, GOAL_PROMPT.md, and PROGRESS.md. Carry out the next step toward the goal, check the result, and update the progress files." Goal mode adds a persistent objective and a progress control so the desktop app can continue working across turns until it reaches a completion condition or needs input. A normal Work prompt guides the task you give it, and you can continue steering it in the same chat.
 
 Now you can start doing something else or go out for a long walk. When you return, you will have the first draft. At this point, you can ask an external model for a final audit. For example, you can create a new folder and, using the same techniques, prepare it for the audit and review. Ideally, you could use more than one model. For example, if you worked with GPT, using Claude's API for this could be a good idea. But using GPT again is also fine if you do not want to pay more. After this, an irresponsible prompter might try to submit the draft for publication.
 
