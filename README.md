@@ -7,6 +7,7 @@ Now that AI models can be used through their respective desktop apps, downloadin
 One important advantage is that you can create the necessary coding environment for that project, which would not be available to the AI model online.
 
 But first, let's understand what a "harness" is, as AI engineers use the term. Even though it takes a little time to read, I suggest reading [this article](https://www.anthropic.com/research/vibe-physics) (by a QFT scientist who supervised an AI in early 2025 as it pursued a PhD in theoretical physics) for a good narrative of the experience of writing the `.md` file to build the AI's harness.
+The basic idea is that in a long chat LLMs get lost (loose information), making this harness is the way to maintain them focused on the task.
 
 ## The "Harness": A Typical Structure for an Agentic Research Workflow
 
