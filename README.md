@@ -1,15 +1,16 @@
-# How-to-adopt-an-agentic-AI-workflow-for-Mathematics (September 2026)
+# How to Adopt an Agentic AI Workflow for Mathematics (September 2026)
 
-This an essential and  not particularly technical guide on how to  to create the harness for doing Mathematical Research.
+This is an essential and not particularly technical guide on how to create a harness for doing mathematical research.
 
-Now AI models can be used trough their respective desktop apps, this is the first step. In this way you can "connect" the models to a folder where you develop your project, giving the permission to modify the file and use your terminal for coding. In GPT app you choose the  "Work" or use "codex" (the first is better since "codex is more oriented to write code"),
-One important advantge is that you can create a necessary coding  environment for that project that onlie would not be available to the AI model. 
+Now that AI models can be used through their respective desktop apps, using a desktop app is the first step. This way, you can "connect" the models to a folder where you develop your project, giving them permission to modify the files and use your terminal for coding. In the GPT app, choose "Work" or use "Codex" (the first is better, since Codex is more oriented toward writing code).
 
-But first let's start to understand what is the "harness" that AI engineer are used to say. Even it takes a bit to read, I suggest to read [this article](https://www.anthropic.com/research/vibe-physics) (from a QFT scientist who supervised early in 2025 an AI to get its Phd in theoretical physics)  to have good narrative of the experience about writing the .md file for building the harness for the AI. 
+One important advantage is that you can create the necessary coding environment for that project, which would not be available to the AI model online.
 
-## The "Harness": Typical structure for an agentic research workflow
+But first, let's understand what a "harness" is, as AI engineers use the term. Even though it takes a little time to read, I suggest reading [this article](https://www.anthropic.com/research/vibe-physics) (by a QFT scientist who supervised an AI in early 2025 as it pursued a PhD in theoretical physics) for a good narrative of the experience of writing the `.md` file to build the AI's harness.
 
-A typical folderstructure is as follow:
+## The "Harness": A Typical Structure for an Agentic Research Workflow
+
+A typical folder structure is as follows:
 
 ```text
 project/
@@ -28,5 +29,3 @@ project/
 ```
 
 The agent reads `AGENTS.md` and `GOAL_PROMPT.md` to understand its instructions and goal, then checks `PROGRESS.md` before continuing work. It records new findings in `RESEARCH_TRACKER.md`, unsuccessful approaches in `FAILURES.md`, and the final synthesis in `FINAL_REPORT.md`.
-
-
