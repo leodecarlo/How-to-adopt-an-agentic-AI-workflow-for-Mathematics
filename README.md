@@ -32,4 +32,8 @@ The agent reads `AGENTS.md` and `GOAL_PROMPT.md` to understand its instructions 
 
 The GOAL_PROMPT.md is the file containing the problem you want to solve, simulations you want to do, etc.., it is important to set a "goal condition", that is a condition that your AI model will have to meet before to stop working. (Do not worry if you interrupt its work, these set of files let you do interrupt the model and going back to it). Agents.md define the behavior of the agents, for example it is important to asking adversial agents to check the computations. These files has to be well written and detailed, adapted to the models you want to use(for example Astra or Sol), so they would ask a lot of work that you will retreat to the usual Chat. But it is not that drammatic as it could seem. The point is letting AI to prepare these files for you !
 
-### How to prepare the AI
+### How to prepare the let AI preparing the Harnesse
+
+Start a chat in Work mode(or the equivalent that let your model to write on your laptop and use your terminal). Make a first turn of warm-up where you ask the AI model the main file and main references of your interest. In the second turn describe in a technical way your problem, exactly as you would do to a collegue, and ask the AI to think about it to realize a "Plan" to solve it, in GPT you turn on the "Plan Mode" inside Work(One of the main things I learnt about prompting is that the best way to pronmpt is asking explaining what you want and asking AI a prompt to use it later. I observed that, with little doubt, the prompts for Math that OpenAI had pubblished was written by AI). And you copy in the chat the harness structure of .md files(as above) you want to prepare and ask to write it. The AI will tell you if you want to realize the plan, once you say "Yes" you will get the work done. After this you can inspect the various folder if you wants to change the problem statement, agent istructions, etc .. . 
+
+
