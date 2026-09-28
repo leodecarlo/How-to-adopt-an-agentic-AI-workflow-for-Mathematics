@@ -48,3 +48,11 @@ Now you can start doing something else or go out for a long walk. When you retur
 The right way to use this technique is to explore ideas. For example, you might have an idea but face a serious gap in realizing it. Trying to talk with people may be very difficult; you may have no idea where to start reading everything you need, and you will probably get lost in the literature. A first draft can help you understand whether the idea is worth pursuing. If so, start reading the draft and use AI (in the same chat or another) to understand what was done. Then continue interacting with AI to learn and develop your paper and idea. By the time you reach a final result, you will have done the review yourself.
 
 Note: I do not believe in these Lean certificates, although for some proofs in combinatorics or algebra they can be a good idea. In general, they seem silly to me, since Lean code that compiles does not guarantee that the definitions in Lean correspond to yours or that the proofs in Lean are the same as those in the document.
+
+## Learning to Prompt and Interact with LLMs
+
+To learn more about prompting and interacting with LLMs, I suggest these three foundational courses from [OpenAI Academy](https://academy.openai.com/pages/courses):
+
+1. [AI Foundations](https://academy.openai.com/public/courses/ai-foundations-dnq5w): giving clear instructions, adding useful context, and checking responses.
+2. [Applied AI Foundations](https://academy.openai.com/public/courses/applied-ai-foundations-szsmv): turning individual tasks into repeatable workflows.
+3. [Agents and Workflows](https://academy.openai.com/public/courses/agents-and-workflows-y0qoc): defining goals and boundaries, directing agents, and reviewing their results.
