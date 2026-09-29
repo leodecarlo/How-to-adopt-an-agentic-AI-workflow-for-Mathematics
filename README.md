@@ -84,3 +84,7 @@ To learn more about prompting and interacting with LLMs, I suggest these three f
 1. [AI Foundations](https://academy.openai.com/public/courses/ai-foundations-dnq5w): giving clear instructions, adding useful context, and checking responses.
 2. [Applied AI Foundations](https://academy.openai.com/public/courses/applied-ai-foundations-szsmv): turning individual tasks into repeatable workflows.
 3. [Agents and Workflows](https://academy.openai.com/public/courses/agents-and-workflows-y0qoc): defining goals and boundaries, directing agents, and reviewing their results.
+
+<p align="justify">
+<strong>GOOD PROMPTING RULE:</strong> To get a good prompt, explain to the AI in detail what you want, then ask it to write a prompt you can use to prompt it again!
+</p>
