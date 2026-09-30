@@ -89,6 +89,8 @@ To learn more about prompting and interacting with LLMs, I suggest these three f
 <strong>GOOD PROMPTING RULE:</strong> To get a good prompt, explain to the AI in detail what you want, then ask it to write a prompt you can use to prompt it again!
 </p>
 
-# Suggested Benchmark to choose AI models for Mathematics
+## Suggested Benchmarks for Choosing AI Models for Mathematics
 
-Many math benchmarks of LLMs exists, the one that I suggested are FrontierMath, this is is interesting because the Tier 4 are hard problem that need a long taks to be solved, but this benchmark suffer from datacontamination from the AI training and I also suggest ArXivMath, this is particurly interesting because it extract short problems, like a proposition from recent Arxiv papers, so it avoids data contamination and it is useful to see the capabilities of the models in proving facts in up to date Math.
+<p align="justify">
+Many mathematical benchmarks for LLMs exist. One that I suggest is <a href="https://epoch.ai/frontiermath/tiers-1-4?view=graph&amp;tab=release-date&amp;tier=Tier+4+%28v2%29">FrontierMath</a>, which is interesting because its Tier 4 problems are difficult and take a long time to solve. However, this benchmark suffers from data contamination from AI training. I also suggest <a href="https://matharena.ai/arxivmath/">ArXivMath</a>, which is particularly interesting because it extracts short problems, such as propositions, from recent arXiv papers. This avoids data contamination and makes it useful for assessing models' ability to prove results in up-to-date mathematics.
+</p>
