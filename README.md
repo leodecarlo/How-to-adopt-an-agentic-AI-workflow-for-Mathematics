@@ -88,3 +88,7 @@ To learn more about prompting and interacting with LLMs, I suggest these three f
 <p align="justify">
 <strong>GOOD PROMPTING RULE:</strong> To get a good prompt, explain to the AI in detail what you want, then ask it to write a prompt you can use to prompt it again!
 </p>
+
+# Suggested Benchmark to choose AI models for Mathematics
+
+Many math benchmarks of LLMs exists, the one that I suggested are FrontierMath, this is is interesting because the Tier 4 are hard problem that need a long taks to be solved, but this benchmark suffer from datacontamination from the AI training and I also suggest ArXivMath, this is particurly interesting because it extract short problems, like a proposition from recent Arxiv papers, so it avoids data contamination and it is useful to see the capabilities of the models in proving facts in up to date Math.
