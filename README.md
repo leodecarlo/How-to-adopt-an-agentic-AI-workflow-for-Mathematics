@@ -47,6 +47,10 @@ The agent reads <code>AGENTS.md</code> and <code>GOAL_PROMPT.md</code> to unders
 <code>GOAL_PROMPT.md</code> is the file containing the problem you want to solve, the simulations you want to run, etc. The filename is just a convention and has no special connection to the app's "Goal" mode. It is important to set a "goal condition": a condition that your AI model must meet before it stops working. (Do not worry if you interrupt its work; this set of files lets you interrupt the model and return to it later.) <code>AGENTS.md</code> defines the behavior of the agents. For example, it is important to ask adversarial agents to check the computations. These files must be well written, detailed, and adapted to the models you want to use (for example, Astra or Sol), so preparing them would require a lot of work. But do not worry: AI is here to help you, so preparing them is not as daunting as it might seem. The point is to let AI prepare these files for you!
 </p>
 
+<p align="justify">
+<strong>NOTE:</strong> You can also ask AI to create the same <code>.md</code> files remotely, on the provider's servers. Depending on the service, you may not have direct access to inspect or modify those files. The AI also cannot use a particular coding environment installed on your laptop; it can only use the tools and libraries available in the remote environment, which may be limited to a standard Python setup.
+</p>
+
 ### How to Let AI Prepare the Harness
 
 <p align="justify">
@@ -93,4 +97,8 @@ To learn more about prompting and interacting with LLMs, I suggest these three f
 
 <p align="justify">
 Many mathematical benchmarks for LLMs exist. One that I suggest is <a href="https://epoch.ai/frontiermath/tiers-1-4?view=graph&amp;tab=release-date&amp;tier=Tier+4+%28v2%29">FrontierMath</a>, which is interesting because its Tier 4 problems are difficult that request a multi-step long time horizon. However, this benchmark suffers from data contamination from AI training. I also suggest <a href="https://matharena.ai/arxivmath/">ArXivMath</a>, which is particularly interesting because it extracts short problems, such as propositions, from recent arXiv papers. This avoids data contamination and makes it useful for assessing models' ability to prove results in up-to-date mathematics.
+</p>
+
+<p align="justify">
+I also suggest following the <a href="https://arcprize.org/leaderboard">ARC Prize leaderboard</a> to track the evolution of models' spatial and temporal reasoning capabilities. In particular, ARC-AGI-3 tests agents in unfamiliar interactive environments, where they must learn through actions and feedback and plan over multiple steps.
 </p>
