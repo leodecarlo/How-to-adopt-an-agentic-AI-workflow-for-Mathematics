@@ -18,7 +18,7 @@ The basic idea is that, in a long chat, LLMs get lost and lose track of informat
 </p>
 
 <p align="justify">
-If you prefer to avoid US companies and use an open model, I currently suggest Alibaba's Qwen for mathematics. <a href="https://qwenlm.github.io/qwen-code-docs/en/users/features/sub-agents/">Qwen Code already supports multi-agent workflows</a>, and Alibaba Cloud's low-cost <a href="https://www.alibabacloud.com/help/en/model-studio/token-plan-overview">Token Plan</a> can be used with it: the Lite subscription currently costs $6/month during the promotion ($8/month normally) and supports 1–2 concurrent agents. At the current promotional prices, Essential supports 2–3 concurrent agents for $10/month (normally $16/month), Standard 3–4 for $18/month (normally $25/month), and Pro 6–8 for $68/month (normally $80/month).
+If you prefer to avoid US companies and use an open model, I currently suggest Alibaba's Qwen for mathematics. <a href="https://qwenlm.github.io/qwen-code-docs/en/users/features/sub-agents/">Qwen Code already supports multi-agent workflows</a>, and Alibaba Cloud's low-cost <a href="https://www.alibabacloud.com/help/en/model-studio/token-plan-overview">Token Plan</a> can be used with it: the Lite subscription currently costs $8/month  and supports 1–2 concurrent agents. At the current promotional prices, Essential supports 2–3 concurrent agents for $16/month, Standard 3–4 for $25/month, and Pro 6–8 for $80/month.
 </p>
 
 ## The "Harness": A Typical Structure for an Agentic Research Workflow
