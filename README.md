@@ -5,7 +5,7 @@ This is an essential and not particularly technical guide on how to create a har
 </p>
 
 <p align="justify">
-Now that AI models can be used through their respective desktop apps, downloading a desktop app is the first step. In this way, you can "connect" the models to a folder where you develop your project, giving them permission to modify the files and use your terminal for coding. In the GPT app, choose "Work" or use "Codex" (the first is better, since Codex is more oriented toward writing code).
+Now that AI models can be used through their respective desktop apps, downloading a desktop app is the first step. In this way, you can "connect" the models to a folder where you develop your project, giving them permission to modify the files and use your terminal for coding. In the GPT app, choose "Work" or use "Codex" (the first is better, since Codex is more oriented toward writing code). Codex is OpenAI's coding agent for writing, reviewing, and debugging code; you can also use it in Visual Studio Code (VS Code) through the <a href="https://learn.chatgpt.com/docs/codex/ide">Codex extension</a>.
 </p>
 
 <p align="justify">
