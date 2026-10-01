@@ -13,7 +13,7 @@ One important advantage is that you can create the necessary coding environment 
 </p>
 
 <p align="justify">
-But first, let's understand what a "harness" is, as AI engineers use the term. Even though it takes a little time to read, I suggest reading <a href="https://www.anthropic.com/research/vibe-physics">this article</a> (by a QFT scientist who supervised an AI in early 2025 as it pursued a PhD in theoretical physics) for a good narrative of the experience of writing the <code>.md</code> file to build the AI's harness.
+But first, let's understand what a "harness" is, as AI engineers use the term. Even though it takes a little time to read, I suggest reading <a href="https://www.anthropic.com/research/vibe-physics">this article</a> (by a QFT scientist who supervised an AI in early 2025 as it pursued a PhD in theoretical physics) for a good narrative of the experience of writing the <code>.md</code> file (a plain-text file with simple Markdown formatting) to build the AI's harness.
 The basic idea is that, in a long chat, LLMs get lost and lose track of information. Creating this harness helps keep them focused on the task.
 </p>
 
@@ -40,7 +40,7 @@ project/
 ```
 
 <p align="justify">
-The agent reads <code>AGENTS.md</code> and <code>GOAL_PROMPT.md</code> to understand its instructions and goal, then checks <code>PROGRESS.md</code> before continuing work. It records new findings in <code>RESEARCH_TRACKER.md</code>, unsuccessful approaches in <code>FAILURES.md</code>, and the final synthesis in <code>FINAL_REPORT.md</code>. Other files may be suitable for a particular task. For example, if you are doing a review, <code>REVIEW_BY_SECTION.md</code> may be more appropriate than <code>RESEARCH_TRACKER.md</code>.
+The agent reads <code>AGENTS.md</code> and <code>GOAL_PROMPT.md</code> to understand its instructions and goal, then checks <code>PROGRESS.md</code> before continuing work. <code>AGENTS.md</code> can guide a single agent, but running its roles as separate agents requires multi-agent support in your plan and app (enable that mode where required). Otherwise, one model may simulate all the roles; this can work, but provides less separation between developing and checking a result. <a href="https://claude.com/product/cowork">Claude Pro ($20/month)</a> already includes multi-agent workflows through Claude Code or Cowork. In GPT Work/Codex, check whether your plan and selected model offer <a href="https://learn.chatgpt.com/docs/models">Ultra</a>. It records new findings in <code>RESEARCH_TRACKER.md</code>, unsuccessful approaches in <code>FAILURES.md</code>, and the final synthesis in <code>FINAL_REPORT.md</code>. Other files may be suitable for a particular task. For example, if you are doing a review, <code>REVIEW_BY_SECTION.md</code> may be more appropriate than <code>RESEARCH_TRACKER.md</code>.
 </p>
 
 <p align="justify">
