@@ -17,6 +17,10 @@ But first, let's understand what a "harness" is, as AI engineers use the term. E
 The basic idea is that, in a long chat, LLMs get lost and lose track of information. Creating this harness helps keep them focused on the task.
 </p>
 
+<p align="justify">
+If you prefer to avoid US companies and use an open model, I currently suggest Alibaba's Qwen for mathematics. <a href="https://qwenlm.github.io/qwen-code-docs/en/users/features/sub-agents/">Qwen Code already supports multi-agent workflows</a>, and Alibaba Cloud's low-cost <a href="https://www.alibabacloud.com/help/en/model-studio/token-plan-overview">Token Plan</a> can be used with it: the Lite subscription currently costs $6/month during the promotion ($8/month normally) and supports 1–2 concurrent agents.
+</p>
+
 ## The "Harness": A Typical Structure for an Agentic Research Workflow
 
 <p align="justify">
