@@ -80,7 +80,7 @@ The right way to use this technique is to explore ideas. For example, you might 
 </p>
 
 <p align="justify">
-Note: I think there is a shortcut in these Lean certificates, although for some proofs in combinatorics or algebra they can be a good idea. In general, they seem tricky to me, since Lean code that compiles does not guarantee that the definitions in Lean correspond to yours or that the proofs in Lean are the same as those in the document.
+Note: I think there is a shortcircuit in these Lean certificates, although for some proofs in combinatorics or algebra they can be a good idea. In general, they seem tricky to me, since Lean code that compiles does not guarantee that the definitions in Lean correspond to yours or that the proofs in Lean are the same as those in the document.
 </p>
 
 ## Learning to Prompt and Interact with LLMs
