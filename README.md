@@ -94,7 +94,11 @@ To learn more about prompting and interacting with LLMs, I suggest these three f
 3. [Agents and Workflows](https://academy.openai.com/public/courses/agents-and-workflows-y0qoc): defining goals and boundaries, directing agents, and reviewing their results.
 
 <p align="justify">
-<strong>GOOD PROMPTING RULE:</strong> To get a good prompt, explain to the AI in detail what you want, then ask it to write a prompt you can use to prompt it again!
+<strong>GOOD PROMPTING RULE1:</strong> To get a good prompt, explain to the AI in detail what you want, then ask it to write a prompt you can use to prompt it again!
+</p>
+
+<p align="justify">
+<strong>GOOD PROMPTING RULE2:</strong> Whether you are using interactive chat or the agentic technique described here, do not reach for the highest apple straight away. Start with smaller, simpler problems or subproblems as a warm-up, then gradually work your way up to more challenging ones.
 </p>
 
 ## Suggested Benchmarks for Choosing AI Models for Mathematics
