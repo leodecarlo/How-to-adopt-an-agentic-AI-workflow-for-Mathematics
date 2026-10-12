@@ -44,7 +44,24 @@ project/
 ```
 
 <p align="justify">
-The agent reads <code>AGENTS.md</code> and <code>GOAL_PROMPT.md</code> to understand its instructions and goal, then checks <code>PROGRESS.md</code> before continuing work. <code>AGENTS.md</code> can guide a single agent, but running its roles as separate agents requires multi-agent support in your plan and app (enable that mode). Otherwise, one model may simulate all the roles; this can work, but provides less separation between developing and checking a result. <a href="https://claude.com/product/cowork">Claude Pro ($20/month)</a> already includes multi-agent workflows through Claude Code or Cowork. In ChatGPT Work, <a href="https://openai.com/index/gpt-5-6/">Ultra</a> requires Pro or Enterprise; in Codex, it is available on <a href="https://learn.chatgpt.com/docs/pricing">Plus ($20/month)</a> and higher plans. It records new findings in <code>RESEARCH_TRACKER.md</code>, unsuccessful approaches in <code>FAILURES.md</code>, and the final synthesis in <code>FINAL_REPORT.md</code>. Other files may be suitable for a particular task. For example, if you are doing a review, <code>REVIEW_BY_SECTION.md</code> may be more appropriate than <code>RESEARCH_TRACKER.md</code>.
+The agent reads <code>AGENTS.md</code> and <code>GOAL_PROMPT.md</code> to understand its instructions and goal, then checks <code>PROGRESS.md</code> before continuing work. <code>AGENTS.md</code> can guide a single agent, but describing several roles in a file does not itself launch separate agents. The app must support subagent delegation. <strong>Multi-agent workflows are available on <a href="https://learn.chatgpt.com/docs/pricing">ChatGPT Plus (US$20/month)</a>; Ultra is not required.</strong> <a href="https://claude.com/pricing">Claude Pro (US$20/month when billed monthly)</a> includes Claude Code and <a href="https://support.claude.com/en/articles/13345190-get-started-with-claude-cowork">Cowork</a>. How delegation starts depends on the app and mode:
+</p>
+
+| App or mode | How delegation works (October 2026) |
+| --- | --- |
+| [ChatGPT Work — most intelligence levels](https://learn.chatgpt.com/docs/agent-configuration/subagents) | Ask explicitly for separate subagents. |
+| [ChatGPT Work — Ultra](https://learn.chatgpt.com/docs/agent-configuration/subagents) | Can delegate suitable work proactively when parallel agents would materially improve speed or quality. Availability depends on your account and model. |
+| [Codex — current local clients (desktop app, CLI, and IDE extension)](https://learn.chatgpt.com/docs/agent-configuration/subagents) | Subagent tools are enabled by default. Ask directly, or request delegation in applicable `AGENTS.md` or skill instructions. |
+| [Claude Code — subagents](https://code.claude.com/docs/en/sub-agents) | Claude can select built-in subagents automatically when appropriate; you can also request subagents explicitly. |
+| [Claude Code — agent teams](https://code.claude.com/docs/en/agent-teams) | A separate experimental feature, disabled by default. Enable it first with `CLAUDE_CODE_EXPERIMENTAL_AGENT_TEAMS=1`; Claude can then form teams on request or when appropriate in an interactive session. |
+| [Cowork](https://support.claude.com/en/articles/13345190-get-started-with-claude-cowork) | Can coordinate parallel subagents for complex tasks when appropriate. Cowork capabilities are also being integrated into the unified Claude experience. |
+
+<p align="justify">
+For a mathematical task, a useful explicit request is: <em>"Spawn separate agents to develop the proof, check the computations, and search for counterexamples; then reconcile their findings."</em> Check the app's agent activity to see which agents actually ran. If separate agents are unavailable, a single model can still simulate these roles, though this gives less separation between developing and checking a result.
+</p>
+
+<p align="justify">
+The main agent records new findings in <code>RESEARCH_TRACKER.md</code>, unsuccessful approaches in <code>FAILURES.md</code>, and the final synthesis in <code>FINAL_REPORT.md</code>. Other files may be suitable for a particular task. For example, if you are doing a review, <code>REVIEW_BY_SECTION.md</code> may be more appropriate than <code>RESEARCH_TRACKER.md</code>.
 </p>
 
 <p align="justify">
@@ -104,7 +121,7 @@ To learn more about prompting and interacting with LLMs, I suggest these three f
 ## Suggested Benchmarks for Choosing AI Models for Mathematics
 
 <p align="justify">
-Many mathematical benchmarks for LLMs exist. One that I suggest is <a href="https://epoch.ai/frontiermath/tiers-1-4?view=graph&amp;tab=release-date&amp;tier=Tier+4+%28v2%29">FrontierMath</a>, which is interesting because its Tier 4 problems are difficult that request a multi-step long time horizon. However, this benchmark suffers from data contamination from AI training. I also suggest <a href="https://matharena.ai/arxivmath/">ArXivMath</a>, which is particularly interesting because it extracts short problems, such as propositions, from recent arXiv papers. This avoids data contamination and makes it useful for assessing models' ability to prove results in up-to-date mathematics.
+Many mathematical benchmarks for LLMs exist. One that I suggest is <a href="https://epoch.ai/frontiermath/tiers-1-4?view=graph&amp;tab=release-date&amp;tier=Tier+4+%28v2%29">FrontierMath</a>, which is interesting because its Tier 4 problems are difficult that request a multi-step long time horizon. However, this benchmark suffers from data contamination from AI training. I also suggest <a href="https://matharena.ai/arxivmath/">ArXivMath</a>, which extracts self-contained questions with exact answers from recent arXiv results, such as propositions, and its companion <a href="https://matharena.ai/brokenarxiv/">BrokenArXiv</a>, which tests whether models recognize corrupted problems and false mathematical statements. BrokenArXiv originally used deliberately altered statements; <a href="https://matharena.ai/arxiv_august/">the updated benchmark</a> focuses on earlier claims and conjectures refuted by recent papers. Using recent papers helps reduce the risk of data contamination and makes these benchmarks useful for assessing models on up-to-date mathematics.
 </p>
 
 <p align="justify">
