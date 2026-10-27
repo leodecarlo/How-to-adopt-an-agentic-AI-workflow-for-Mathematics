@@ -98,7 +98,7 @@ To learn more about prompting and interacting with LLMs, I suggest these three f
 </p>
 
 <p align="justify">
-<strong>GOOD PROMPTING RULE2:</strong> Whether you are using interactive chat or the agentic technique described here, do not reach for the highest apple straight away. Start with smaller, simpler problems or subproblems as a warm-up, then gradually work your way up to more challenging ones.
+<strong>GOOD PROMPTING RULE2:</strong> Whether you are using interactive chat or the agentic technique described here, do not reach for the highest apple straight away. Start with smaller problems or subproblems as a warm-up, then gradually work your way up to more challenging ones.
 </p>
 
 ## Suggested Benchmarks for Choosing AI Models for Mathematics
